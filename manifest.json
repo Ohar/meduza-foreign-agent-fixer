@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Прятание плашки инагента на Медузе",
+  "version": "1.0",
+  "author": "Pavel Lysenko aka Ohar <code@ohar.name>",
+  "description": "Это плагин для браузера, который просто прячет плашку с сообщением об инагенте на сайте Медузы.",
+  "homepage_url": "https://github.com/Ohar/meduza-foreign-agent-fixer",
+  "icons": {
+    "32": "icons/icon-32.jpg",
+    "48": "icons/icon-48.jpg",
+    "96": "icons/icon-96.jpg",
+    "128": "icons/icon-128.jpg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://meduza.io*"],
+      "css": ["styles.css"]
+    }
+  ]
+}
