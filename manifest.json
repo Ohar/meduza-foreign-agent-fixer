@@ -13,7 +13,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://meduza.io*"],
+      "matches": ["*://meduza.io/*"],
       "css": ["styles.css"]
     }
   ]
